@@ -1,11 +1,13 @@
 import { MdOutlineEmail } from 'react-icons/md';
-import { RiMessengerLine } from 'react-icons/ri';
+import { FaLinkedin } from 'react-icons/fa';
 import { BsWhatsapp } from 'react-icons/bs';
 import './contact.css';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import { useToast } from '../../componentsShadcn/ui/use-toast';
 const Contact = () => {
   const form = useRef();
+  const { toast } = useToast();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,9 +22,17 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          toast({
+            description: 'Your mail had been sent successfully',
+          });
         },
         (error) => {
           console.log(error.text);
+          toast({
+            variant: 'destructive',
+            title: 'Uh oh! Something went wrong.',
+            description: error.text,
+          });
         }
       );
     e.target.reset();
@@ -42,19 +52,22 @@ const Contact = () => {
             </a>
           </article>
           <article className='contact__option'>
-            <RiMessengerLine className='contact__option-icon' />
-            <h4>Messenger</h4>
+            <FaLinkedin className='contact__option-icon' />
+            <h4>LinkedIn</h4>
             <h5>Olarinde Alli</h5>
-            <a href='https://m.me/alli.olarinde' target='__blank'>
+            <a
+              href='https://www.linkedin.com/in/olarinde-alli-892747178'
+              target='__blank'
+            >
               Send a message
             </a>
           </article>
           <article className='contact__option'>
             <BsWhatsapp className='contact__option-icon' />
             <h4>Whats App</h4>
-            <h5>+234000000</h5>
+            <h5>+2347033802307</h5>
             <a
-              href='https://api.whatsapp.com/send?phone+2347033802307&text=Hello there'
+              href='https://api.whatsapp.com/send?phone+2347033802307&text=Hello there my name is____,'
               target='__blank'
             >
               Send a message

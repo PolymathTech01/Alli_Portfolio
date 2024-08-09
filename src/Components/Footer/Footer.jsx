@@ -1,4 +1,3 @@
-import { FaFacebook } from 'react-icons/fa';
 import { BsLinkedin } from 'react-icons/bs';
 import { IoLogoTwitter } from 'react-icons/io';
 
@@ -25,21 +24,21 @@ const Footer = () => {
         <li>
           <a href='#portfolio'>Portfolio</a>
         </li>
-        <li>
+        {/* <li>
           <a href='#testimonials'>Testimonials</a>
-        </li>
+        </li> */}
         <li>
           <a href='#contact'>Contact</a>
         </li>
       </ul>
       <div className='footer__socials'>
-        <a href='https://facebook.com'>
-          <FaFacebook />
-        </a>
-        <a href='https://linkedin.com'>
+        <a
+          href='https://www.linkedin.com/in/olarinde-alli-892747178'
+          target='__blank'
+        >
           <BsLinkedin />
         </a>
-        <a href='https://twitter.com'>
+        <a href='https://x.com/AlliOlarinde' target='__blank'>
           <IoLogoTwitter />
         </a>
       </div>

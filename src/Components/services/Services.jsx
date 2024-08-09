@@ -5,107 +5,48 @@ const Services = () => {
     <section id='services'>
       <h5>What I Offer</h5>
       <h2>Services</h2>
-      <div className='container services__container'>
-        <article className='service'>
-          <div className='service__head'>
-            <h3>UI/UX Design</h3>
-          </div>
-          <ul className='service__list'>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-          </ul>
-        </article>
+      <div className='container flex justify-center items-center'>
         {/* END OF UI/UX */}
-        <article className='service'>
+        <article className='service h-auto'>
           <div className='service__head'>
-            <h3>Web Developement</h3>
+            <h3>Full Stack Web Development</h3>
           </div>
           <ul className='service__list'>
-            <li>
+            <li className='pb-2'>
               <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>
+                Building responsive websites and web applications that are
+                optimized for various devices,ensuring seamless experience.
+              </p>
             </li>
-            <li>
+            <li className='pb-2'>
               <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Integration of third-party APIs and services</p>
             </li>
-            <li>
+            <li className='pb-2'>
               <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>
+                Optimizing website loading times to ensure smooth user
+                experience.
+              </p>
             </li>
-            <li>
+            <li className='pb-2'>
               <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>
+                Search Engine Optimization. Implementing SEO strategies to
+                website and web applications to ensure good ranking on search
+                engines
+              </p>
             </li>
-            <li>
+            <li className='pb-2'>
               <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>
+                Building APIs with nodejs with Test Driven Development (TDD)
+              </p>
             </li>
           </ul>
         </article>
         {/* End of Web Developement */}
-        <article className='service'>
-          <div className='service__head'>
-            <h3>Content Creation</h3>
-          </div>
-          <ul className='service__list'>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-          </ul>
-        </article>
-        {/* End of Content Creation */}
       </div>
     </section>
   );

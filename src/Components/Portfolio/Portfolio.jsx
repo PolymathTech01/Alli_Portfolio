@@ -1,52 +1,20 @@
 import './portfolio.css';
-import IMG1 from '../../Assets/portfolio1.jpg';
-import IMG2 from '../../Assets/portfolio2.jpg';
-import IMG3 from '../../Assets/portfolio3.jpg';
-import IMG4 from '../../Assets/portfolio4.jpg';
-import IMG5 from '../../Assets/portfolio5.png';
-import IMG6 from '../../Assets/portfolio6.jpg';
+import rethink from '../../Assets/rethink.png';
+import crownClothing from '../../Assets/crownClothing.png';
 const data = [
   {
+    id: 0,
+    image: crownClothing,
+    title: 'Crown Clothing, a mini e-commerce website',
+    github: 'https://github.com/PolymathTech01/CrownClothingProject',
+    demo: 'https://comforting-chebakia-ab2594.netlify.app/',
+  },
+  {
     id: 1,
-    image: IMG1,
-    title: 'Crypto Currency Dashboard',
-    github: 'https://github.com',
-    demo: 'https:link',
-  },
-  {
-    id: 2,
-    image: IMG2,
-    title: 'Crypto Currency Dashboard',
-    github: 'https://github.com',
-    demo: 'https:link',
-  },
-  {
-    id: 2,
-    image: IMG3,
-    title: 'Crypto Currency Dashboard',
-    github: 'https://github.com',
-    demo: 'https:link',
-  },
-  {
-    id: 4,
-    image: IMG4,
-    title: 'Crypto Currency Dashboard',
-    github: 'https://github.com',
-    demo: 'https:link',
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: 'Crypto Currency Dashboard',
-    github: 'https://github.com',
-    demo: 'https:link',
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: 'Crypto Currency Dashboard',
-    github: 'https://github.com',
-    demo: 'https:link',
+    image: rethink,
+    title: 'Rethink website',
+    github: 'https://github.com/PolymathTech01/retinkAssesment',
+    demo: 'https://retinkassessment.netlify.app/',
   },
 ];
 const Portfolio = () => {

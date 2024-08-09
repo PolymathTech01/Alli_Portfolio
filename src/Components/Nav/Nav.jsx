@@ -3,7 +3,7 @@ import { AiOutlineHome } from 'react-icons/ai';
 import { AiOutlineUser } from 'react-icons/ai';
 import { BiBook, BiMessageSquareDetail } from 'react-icons/bi';
 import { RiServiceLine } from 'react-icons/ri';
-import { BsChatRightText } from 'react-icons/bs';
+// import { BsChatRightText } from 'react-icons/bs';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import './nav.css';
@@ -47,7 +47,7 @@ const Nav = () => {
           <RiServiceLine />
         </a>
       </Tippy>
-      <Tippy content='Testimonials'>
+      {/* <Tippy content='Testimonials'>
         <a
           href='#testimonials'
           onClick={() => setActiveNav('#testimonials')}
@@ -55,7 +55,7 @@ const Nav = () => {
         >
           <BsChatRightText />
         </a>
-      </Tippy>
+      </Tippy> */}
       <Tippy content='Contact Me'>
         <a
           href='#contact'
